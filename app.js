@@ -5,7 +5,7 @@ function yourName() {
     do {
         name = prompt('What is my name?');
         console.log('try again');
-    } while (name !== 'amanda')
+    } while (name !== 'Brendan')
 
     return name;
 }
@@ -40,17 +40,4 @@ function timeOfDay() {
     }
 
     return message;
-}
-
-function displayRating() {
-
-    let output = '';
-    let rating = prompt('scale of 1-5, how many stars?');
-    for(let i = 0; i < rating; i++){
-        output = output + "<img class='star' src='images/star.png'/>";
-    }
-
-    // <img class='star' src='images/star.png'/><img class='star' src='images/star.png'/><img class='star' src='images/star.png'/>
-
-    return document.write(output);
 }
